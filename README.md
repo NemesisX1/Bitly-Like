@@ -12,3 +12,5 @@ of the well knowed url shortener [bit.ly](https://bitly.com/).
   - Simple Algorithm shortener algorithm 
   - Simple Database handling with eloquent
   - Cute UI experience
+
+> :pushpin: To report error or suggest some news features please send a mail to <junior.medehou@hotmail.com>. Don't forget to modify the .env file according to your own database setup.
