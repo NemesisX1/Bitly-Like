@@ -14,7 +14,6 @@
     <label for="" class="form-link-name">Votre lien</label><br><br>
     <input type="url" name=url class="form-link-input custom-input"><br><br>
     <input id='submitButton' type="submit" value="Envoyer">
-    <span> &nbsp;&nbsp;&nbsp;&nbsp; Où vous voulez valider un <a href="/check">lien</a> ?</span>
 </form>
 
 @include('footer')

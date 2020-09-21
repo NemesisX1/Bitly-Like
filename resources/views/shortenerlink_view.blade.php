@@ -6,11 +6,20 @@
 
 </div>
 <form action="" class="form out-topbar">
-    <label for="" class="form-link-name" >Voici votre super short-url!Il a été bien enregistré</label><br><br>
+    <label for="" class="form-link-name" >Voici votre lien reduit !</label><br><br>
     <div class="short-url" style="text-align: center;">
+        <a href="
+        <?php
+        $actual_link = "http://$_SERVER[HTTP_HOST]"."/redirect/";
+        echo "$actual_link".$id;
+        ?>">
         <p>
-            {{ $url }}
+            <?php
+            $actual_link = "http://$_SERVER[HTTP_HOST]"."/redirect/";
+            echo "$actual_link".$id;
+            ?>
         </p>
+    </a>
     </div>
 </form>
 @include('footer')

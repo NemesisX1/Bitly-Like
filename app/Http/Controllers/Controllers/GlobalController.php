@@ -29,7 +29,7 @@ class GlobalController extends Controller
         $link->short_link()->save($s_link);
 
         return view('shortenerlink_view', [
-            'url' => hasher($url),
+            'id' => hasher($url),
         ]);
     }
 
@@ -44,9 +44,16 @@ class GlobalController extends Controller
         ]);
     }
 
-    public function check() {
 
-     return view('check');
+    public function bitly() {
+        $url_id = request('id');
+
+
+        $ShortLink = \App\ShortLink::query()->where('shortened_link', $url_id)->first();
+        $Link = \App\Link::find($ShortLink['link_id']);
+        return view('redirect', [
+            'url_id' => $Link->normal_link,
+        ]);
     }
 
 }

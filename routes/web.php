@@ -15,12 +15,7 @@ use App\Http\Controllers\GlobalController;
 */
 
 Route::get('/', [GlobalController::class, 'index']);
-
-
-
-
 Route::post('/link', [GlobalController::class, 'link']);
-
-Route::post('/redirect', [GlobalController::class, 'redirect']);
+Route::get('/redirect/{url_id}', [GlobalController::class, 'redirect']);
 Route::get('/check', [GlobalController::class, 'check']);
-
+Route::get('/bitly/{id}', [GlobalController::class, 'bitly']);
