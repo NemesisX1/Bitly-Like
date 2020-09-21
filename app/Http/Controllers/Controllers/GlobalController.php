@@ -44,16 +44,4 @@ class GlobalController extends Controller
         ]);
     }
 
-
-    public function bitly() {
-        $url_id = request('id');
-
-
-        $ShortLink = \App\ShortLink::query()->where('shortened_link', $url_id)->first();
-        $Link = \App\Link::find($ShortLink['link_id']);
-        return view('redirect', [
-            'url_id' => $Link->normal_link,
-        ]);
-    }
-
 }

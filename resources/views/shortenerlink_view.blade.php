@@ -10,12 +10,12 @@
     <div class="short-url" style="text-align: center;">
         <a href="
         <?php
-        $actual_link = "http://$_SERVER[HTTP_HOST]"."/redirect/";
+        $actual_link = "http://$_SERVER[HTTP_HOST]"."/ly/";
         echo "$actual_link".$id;
         ?>">
         <p>
             <?php
-            $actual_link = "http://$_SERVER[HTTP_HOST]"."/redirect/";
+            $actual_link = "http://$_SERVER[HTTP_HOST]"."/ly/";
             echo "$actual_link".$id;
             ?>
         </p>
