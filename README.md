@@ -9,6 +9,6 @@ of the well knowed url shortener [bit.ly](https://bitly.com/).
 
 ## Achievement 🎓
 
-    -   Simple Algorithm shortener algorith 
-    -   Simple Database handling with eloquent
-    -   Cute UI experience
+  - Simple Algorithm shortener algorith 
+  - Simple Database handling with eloquent
+  - Cute UI experience
