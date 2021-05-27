@@ -1,6 +1,6 @@
 # my-bitly 🔗
 
-This is a small projet made with the Laravel framework.
+This is a small project made with the Laravel framework.
 
 ## Goals 📌
 
